@@ -1,0 +1,25 @@
+.top{
+    background-color:#333;
+    height:80px;
+    position: fixed;
+    top:0px;
+    width:100%;
+    z-index: 10000;//position可能会导致a标签失效，加入z-index即可
+    div{
+        line-height:80px;
+    }
+    .tab_list{
+        display:black;
+        list-style: none;
+        li.item{
+        text-align: center;
+        float:left;
+        padding: 20px;
+        color:white;
+        line-height:40px;
+        a{
+            color:white;
+        }
+        }
+    }
+}

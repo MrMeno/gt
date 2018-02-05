@@ -1,0 +1,220 @@
+
+.tools{
+    width:100%;
+    min-height:600px;
+    border:solid 1px #999;
+    padding: 0px;
+    margin: 0px;
+    .tabs{
+            display: flex;
+            width:100%;
+            height:100px;
+            flex-direction: row;
+            .items{
+                flex:1;
+                height:100px;
+                //border-left:solid 1px #999;
+                border-bottom:solid 1px #999;
+                text-align: center;
+                line-height: 100px;
+                cursor: pointer;
+                background-color: #eee;
+            }
+             .active{
+                   display:block;
+                    border-bottom:solid 0px #fff;
+                    background-color: #fff;
+                     border-left:solid 1px #999;
+                      border-right:solid 1px #999;
+                }        
+    }
+      .content{
+        .caculator{
+            display: flex;
+              flex-direction: column;
+              width:100%;
+              height:auto;
+              padding-top:20px;
+            .item__1{
+                display: flex;
+                flex-direction: row;
+                line-height: 40px;
+                padding-top: 10px;
+                .form_item:nth-child(1){
+                    flex-grow:1;
+                    text-align: right;
+                    width:150px;
+                }
+                 .form_item:nth-child(2){
+                      width:300px;
+                     padding:0px 20px
+                   
+                 }
+                 .form_item:nth-child(3){
+                      width:150px;
+                    flex-grow:1;
+                    text-align: left;
+                }
+                .form_submit:nth-child(1){
+                    flex-grow:1;
+                    text-align: right;
+                    input{
+                        padding-right: 10px;
+                    }
+                }
+                 .form_submit:nth-child(2){
+                    flex-grow:1;
+                    text-align: left;
+                      input{
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+        .telNotice{
+           display: flex;
+              flex-direction: column;
+              width:100%;
+              height:auto;
+              padding-top:20px;
+                 .item__2{
+                display: flex;
+                flex-direction: row;
+                line-height: 40px;
+                padding-top: 10px;
+                text-align: center;
+                  .form_item:nth-child(1){
+                    flex-grow:1;
+                    text-align: right;
+                   // width:150px;
+                }
+                 .form_item:nth-child(2){
+                      flex-grow:1;
+                     // width:300px;
+                     padding:0px 20px;
+                     .form-control{
+                         width:350px;
+                     }
+                   
+                 }
+                 }
+             
+        }
+        .bankNO{
+             .content{
+              display: flex;
+             flex-direction: column;
+              //justify-content: center ;
+              width:100%;
+              height:auto;
+              .item__3{
+                  text-align: center;
+              }
+               .item__3:nth-child(Odd){//奇数列
+                  flex-grow: 0.2;
+                 }
+              .item__3:nth-child(even){
+                     flex-grow: 1;
+                    .form{
+                     display: flex;
+                     flex-direction: column;
+                     .nav{
+                       display: flex;
+                       flex-direction: row;  
+                       text-align: center; 
+                       padding-top:50px;  
+                       div{
+                           flex-grow:1;
+                           label{
+                               display: inline-block;
+                               cursor: pointer;
+                               font-size: 15px;
+                           }
+                       }             
+                    }
+                  .more{
+                      width:100%;
+                    display: flex;
+                     flex-direction: column;
+                     .form-item{
+                        padding:10px;
+                        display: flex;
+                        flex-direction: row;
+                        .cell{
+                            line-height: 30px;
+                            padding:10px;
+                            .form-control{
+                                width:300px;
+
+                            }
+                        }
+                        .cell:nth-child(1){
+                         flex-grow: 1;
+                         text-align: right;
+                        }
+                        .cell:nth-child(2){
+                         flex-grow: 1;
+                          text-align: left;
+                        }
+                    }
+                  }
+                  .less{
+                      display: none;
+                       width:100%;
+                     flex-direction: column;
+                      .form-item{
+                         padding:10px;
+                        display: flex;
+                        flex-direction: row;
+                          .cell{
+                            line-height: 30px;
+                            padding:10px;
+                            .form-control{
+                                width:300px;
+
+                            }
+                        }
+                          .cell:nth-child(1){
+                         flex-grow: 1;
+                         text-align: right;
+                        }
+                        .cell:nth-child(2){
+                         flex-grow: 1;
+                          text-align: left;
+                        }
+                      }
+                  }
+                    }
+                 }
+             }
+        }
+        .calendar{
+          .content{
+              display: flex;
+              flex-direction: column;
+              width:100%;
+              height:auto;
+               .item__4{
+                   display: flex;
+                   flex-direction: column;
+                   .d_inner{
+                    flex:1;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:flex-start;
+                    .cell{
+                       flex-grow:0.142;
+                       text-align: center;
+                      }
+                   }
+               }
+          }
+        }
+          .active{
+                    display:block;
+         }
+         .negative{
+                    display:none;
+         }
+    }
+}
